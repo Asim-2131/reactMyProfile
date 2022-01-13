@@ -14,7 +14,7 @@ export default class HomeComponent extends Component{
                 <div className = "nameandtext container"><div className = "mytext"><b>Hello !!</b></div>
                     <div className = "name">I'm Mahammadasim</div></div>
                 
-                <div className = "horizontalline"></div>
+                <div className = "horizontalline"/>
             </div>
         )
     }

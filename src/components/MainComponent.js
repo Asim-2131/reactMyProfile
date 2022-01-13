@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import HeaderComponent from './HeaderComponent';
 import HomeComponent from './HomeComponent';
 import SkillComponent from './SkillComponent';
+import ProjectComponent from './ProjectComponent';
 export default class MainComponent extends Component{
 
     constructor(props){
@@ -17,7 +18,10 @@ export default class MainComponent extends Component{
                 <div id = "skills">
                     <SkillComponent/>
                 </div>
-                <div className = "footer" style = {{color:"black", marginTop:30}}>
+                <div id = "projects">
+                    <ProjectComponent/>
+                </div>
+                <div className = "footer" style = {{marginTop:30}}>
                    <h2 style = {{display : "inline-block"}}>Created by 	&#8594;<div style = {{color : "white"}}>Vora Mahammadasim &#128516;</div></h2>
                </div>
             </div>

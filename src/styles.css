@@ -28,12 +28,14 @@ html {
     background : #fff;
     color : #000;
     z-index : 999;
+    
 }
 .navbar{
     display : flex;
     height : 64px;
     justify-content: space-between;
     align-items : center;
+    
 }
 .logo{
     order : 1;
@@ -79,13 +81,16 @@ html {
     border-radius : 0px 0px 100% 0px;
     justify-content : center;
 }
-.skillContainer{
+.main-heading-container{
     max-width : 110rem;
     width : 90%;
     margin : 0 auto;
     margin-top : 4rem;
 }
-.SkillText{
+.bg-color{
+    background-color:#ddd;
+}
+.heading-text{
     font-size : 5rem;
     color:#0e2c3d;
     background-color:#e0fbfc;
@@ -196,6 +201,7 @@ html {
     font-size : 3rem;
     text-align : center;
     font-weight : 200;
+    background-color:rgb(227, 251, 255);
 }
 .cardContainer{
     margin : 0 auto;
@@ -205,11 +211,74 @@ html {
     justify-content: center;
     flex-wrap : wrap;
 }
+.main-row{
+    display : flex;
+    flex-direction : column;
+}
+.row{
+    height : 30rem;
+    margin : 2rem;
+    
+}
+.project-heading {
+    text-align : center;
+    margin : 1rem;
+    color:rgb(0, 0, 0);
+    border-radius : 3rem;
+    font-size : 3rem;
+}
+.project-main-content{
+    font-size : 1.5rem;
+    text-align : left;
+    display : flex;
+    align-items : center;
+    justify-content : space-evenly;
+    margin : 2rem 4.5rem 2rem 4.5rem;
+}
+.rowodd{
+    display : flex;
+    justify-content : space-around;
+    flex-wrap : wrap-reverse;
+}
+.roweven{
+    display : flex;
+    justify-content : space-around;
+    flex-wrap : wrap;
+}
+.project-content{
+    width : 50%;
+    font-size : 3rem;
+    background-color:rgb(227, 251, 255);
+    box-shadow : 0 8px 8px 6px rgba(0,0,0,0.2);
+}
+.project-img1{
+    background-image : url('./images/payroll.jpg');
+}
+.project-img2{
+    background-image : url('./images/mediacontroller.jpg');
+}
+.project-img3{
+    background-image : url('./images/elearning.jpg');
+}
+.project-img4{
+    background-image : url('./images/elibrary.jpg');
+}
+.project-img5{
+    background-image : url('./images/equityportfolio.jpg');
+}
+.pimg{
+    width : 50%;
+    background-size : cover;
+    background-repeat:no-repeat;
+    background-position : center;
+    
+    box-shadow : 3px 4px 4px 3px rgba(0,0,0,0.2);
+}
 .footer{
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(34, 33, 33, 0.459);
+    background-color:rgb(92, 92, 92);
     color: white;
     text-align: center;
     height : 5rem;
@@ -230,6 +299,15 @@ html {
 @media (max-width : 720px){
     html{
         font-size : 50%;
+    }
+    .row{
+        height : 50rem;
+    }
+    .project-content {
+        width : 57rem;
+    }
+    .pimg{
+        width : 57rem;
     }
 }
 @media (max-width : 521px){

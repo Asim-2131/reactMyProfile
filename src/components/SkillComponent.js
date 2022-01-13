@@ -6,8 +6,9 @@ export default class SkillComponent extends Component{
     }
     render(){
         return(
-            <div className = "skillContainer">
-                <div className = "SkillText">
+            <div>
+            <div className = "main-heading-container">
+                <div className = "heading-text">
                     Skills
                 </div>
                 <br></br><br></br><br></br>
@@ -66,7 +67,11 @@ export default class SkillComponent extends Component{
                             Express
                         </div>
                     </div>
+                    
                 </div>
+                <br/><br/>
+                
+            </div><div className = "horizontalline"/>
             </div>
         )
     }
