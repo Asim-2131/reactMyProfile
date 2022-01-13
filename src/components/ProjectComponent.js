@@ -61,18 +61,18 @@ export default class Project extends Component{
                             <div className = "project-content">
                                 <h5 className = "project-heading">Equity Portfolio</h5>
                                 <p className = "project-main-content">It is a Full Stack (MERN) developed project for handling stock data. There
-is a Web Scraping using Axios. There is a facility to watch stock's current
-price and manage personal portfolio for user like investment, profit and
-loss in particular stocks. In this Web Application I used MongoDB as a Back end Database (NoSql DB), ReactJS as front end development and
-NodeJS and Express as server side coding.
-</p>
+                                is a Web Scraping using Axios. There is a facility to watch stock's current
+                                price and manage personal portfolio for user like investment, profit and
+                                loss in particular stocks. In this Web Application I used MongoDB as a Back end Database (NoSql DB), ReactJS as front end development and
+                                NodeJS and Express as server side coding.
+                                </p>
                             </div>
                             
                         </div>
                     </div>
                     <br></br><br></br><br></br>
                 </div>
-                
+                <div className = "horizontalline"/>
             </div>
         )
     }

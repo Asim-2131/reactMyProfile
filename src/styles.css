@@ -10,10 +10,8 @@ html {
     font-size : 62.5%;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    /* background: linear-gradient(to left, #f0a38b, #ffffff, #79cceb, #ffffff);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite; */
     background-color :rgb(255, 255, 255);
+    overflow-x : hidden;
 }
 .container{
     max-width : 1100px;
@@ -35,7 +33,7 @@ html {
     height : 64px;
     justify-content: space-between;
     align-items : center;
-    
+    flex-wrap : wrap
 }
 .logo{
     order : 1;
@@ -96,6 +94,10 @@ html {
     background-color:#e0fbfc;
     display : inline-block;
     border-radius : 2.5rem 0px 2.5rem 0px;
+    border-left:2px solid red;
+    border-top : 2px solid black;
+    border-right:2px solid red;
+    border-bottom : 2px solid black;
 }
 .my-photo{
     height : 31rem;
@@ -114,7 +116,6 @@ html {
     background-color:rgb(175, 240, 240);
     border-right : 0.5rem solid rgb(0, 0, 0);
     box-sizing : content-box;
-    animation :  photospin infinite 1s linear;
 }
 .mytext{
     font-size:3rem;
@@ -218,7 +219,6 @@ html {
 .row{
     height : 30rem;
     margin : 2rem;
-    
 }
 .project-heading {
     text-align : center;
@@ -228,7 +228,7 @@ html {
     font-size : 3rem;
 }
 .project-main-content{
-    font-size : 1.5rem;
+    font-size : 1.7rem;
     text-align : left;
     display : flex;
     align-items : center;
@@ -249,7 +249,8 @@ html {
     width : 50%;
     font-size : 3rem;
     background-color:rgb(227, 251, 255);
-    box-shadow : 0 8px 8px 6px rgba(0,0,0,0.2);
+    
+    box-shadow : 3px 4px 4px 3px rgba(0,0,0,0.2);
 }
 .project-img1{
     background-image : url('./images/payroll.jpg');
@@ -272,7 +273,7 @@ html {
     background-repeat:no-repeat;
     background-position : center;
     
-    box-shadow : 3px 4px 4px 3px rgba(0,0,0,0.2);
+    box-shadow : 3px 0 4px 3px rgba(0,0,0,0.2);
 }
 .footer{
     right: 0;
@@ -281,12 +282,76 @@ html {
     background-color:rgb(92, 92, 92);
     color: white;
     text-align: center;
-    height : 5rem;
+    height : 10rem;
     display : flex;
     align-items : center;
     justify-content : center;
- }
- 
+}
+.each-certi{
+    border-bottom : 2.5px solid black;
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    font-family : Comic Sans MS, Comic Sans, cursive;
+    background-image: linear-gradient(to right, white,#b9fcfc);
+    border-radius : 2rem;
+}
+.each-certi1{
+    border-bottom : 2.5px solid black;
+    margin-top : 1rem;
+    margin-bottom : 1rem;
+    display : flex;
+    align-items : center;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    font-family : Comic Sans MS, Comic Sans, cursive;
+    background-image: linear-gradient(to right, #b9fcfc,white);
+    border-radius : 2rem;
+}
+.goto-button-image{
+    height : 4rem;
+    width : 5.5rem;
+    background-image : url('./images/goto.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    float : right;
+}
+.certi-site, .certi-name{
+    font-size : 2rem;
+}
+.design-background{
+    position : absolute;
+    z-index : -1;
+    height : 50rem;
+    width :50rem;
+    overflow:hidden;
+    margin-left : 80%;
+    transform : rotate(30deg);
+    border-top : 4px solid blue;
+    border-right : 4px solid black;
+    border-bottom : 4px solid blue;
+    border-left : 4px solid black;
+    border-radius : 40%;
+    animation :  photospin infinite 5.5s linear;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 20vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(230, 230, 230, 0.8); /* Black w/ opacity */
+  }
+  
 @keyframes photospin {
     from {
       transform: rotate(0deg);
@@ -305,9 +370,33 @@ html {
     }
     .project-content {
         width : 57rem;
+        height : 60%;
     }
     .pimg{
         width : 57rem;
+        height : 40%;
+    }
+    .each-certi, .each-certi1{
+        flex-direction : column;
+    }
+    
+}
+@media(max-width : 910px){
+    .row{
+        height : 40rem;
+    }
+}
+@media(max-width : 440px){
+    .row{
+        height : 50rem;
+    }
+    .each-certi{
+        flex-direction : column;
+    }
+}
+@media(max-width : 300px){
+    .row{
+        height : 52rem;
     }
 }
 @media (max-width : 521px){
