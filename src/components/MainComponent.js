@@ -53,11 +53,11 @@ export default class MainComponent extends Component{
                         <div>
                                     <span  className = "icon"><a href = {"https://www.instagram.com/asim.v_2131/"} target={"_blank"}><FontAwesomeIcon icon = {faInstagram} size = "2x"/></a></span>
                                 
-                                    <span  className = "icon"><a href = {"https://www.linkedin.com/in/asim-vora-a90865175/"}><FontAwesomeIcon icon = {faFacebook} size = "2x"/></a></span>
+                                    <span  className = "icon"><a href = {"https://www.facebook.com/mahammadasim.vora/"} target={"_blank"}> <FontAwesomeIcon icon = {faFacebook} size = "2x"/></a></span>
                                
-                                    <span  className = "icon"><a href = {"https://twitter.com/Asim_2131"}><FontAwesomeIcon icon = {faTwitter} size = "2x"/></a></span>
+                                    <span  className = "icon"><a href = {"https://twitter.com/Asim_2131"} target={"_blank"}><FontAwesomeIcon icon = {faTwitter} size = "2x"/></a></span>
                                 
-                                    <span  className = "icon"><a href = {"https://www.linkedin.com/in/asim-vora-a90865175/"}><FontAwesomeIcon icon = {faLinkedin} size = "2x"/></a></span>
+                                    <span  className = "icon"><a href = {"https://www.linkedin.com/in/asim-vora-a90865175/"} target={"_blank"}><FontAwesomeIcon icon = {faLinkedin} size = "2x"/></a></span>
                                 
                             
                             <div className = "email-address">
