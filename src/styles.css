@@ -287,6 +287,7 @@ html {
     background-color:rgb(92, 92, 92);
     color: white;
     text-align: center;
+    font-size : 1.2rem;
     height : 10rem;
     display : flex;
     align-items : center;
@@ -343,6 +344,34 @@ html {
     border-radius : 40%;
     animation :  photospin infinite 5.5s linear;
 } 
+.combined-div{
+    width : 14rem;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    position : absolute;
+}
+.please-wait{
+    margin-top : 4rem;
+    text-align : center;
+    font-size : 2rem;
+}
+.loading-bar-1{
+    height : 0.8rem;
+    background-color : black;
+    width : 14rem;
+    top : 6.5rem;
+    position : absolute;
+    animation :  photospin infinite 1.6s linear;
+}
+.loading-bar-2{
+    height : 14rem;
+    background-color:blue;
+    width : 0.8rem;
+    left : 6.5rem;
+    position : relative;
+    animation :  photospin infinite 1.6s linear;
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -400,6 +429,15 @@ html {
       transform: rotate(360deg);
     }
   }
+  @keyframes photospinr {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
   
 @media (max-width : 720px){
     html{
