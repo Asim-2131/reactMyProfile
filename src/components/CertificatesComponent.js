@@ -27,7 +27,7 @@ export default class CertificatesComponent extends Component{
                         Certificates
                     </div>
                     <div className = "certi-container forbr">
-                        <div className = "each-certi">
+                        <div className = "each-certi" onClick = {()=>{this.openPhoto(1)}}>
                             <div className = "certi-site">
                                 HackerRank
                             </div>
@@ -35,10 +35,10 @@ export default class CertificatesComponent extends Component{
                                 Problem Solving Basics
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(1)}}></div>
+                                <div className = "goto-button-image" ></div>
                             </div>
                         </div>
-                        <div className = "each-certi1">
+                        <div className = "each-certi1" onClick = {()=>{this.openPhoto(2)}}>
                             <div className = "certi-site">
                                 HackerRank
                             </div>
@@ -46,10 +46,10 @@ export default class CertificatesComponent extends Component{
                                 Problem Solving Intermediate
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(2)}}></div>
+                                <div className = "goto-button-image" ></div>
                             </div>
                         </div>
-                        <div className = "each-certi">
+                        <div className = "each-certi"  onClick = {()=>{this.openPhoto(3)}}>
                             <div className = "certi-site">
                                 HackerRank
                             </div>
@@ -57,10 +57,10 @@ export default class CertificatesComponent extends Component{
                                 Problem Solving Advance
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(3)}}></div>
+                                <div className = "goto-button-image"></div>
                             </div>
                         </div>
-                        <div className = "each-certi1">
+                        <div className = "each-certi1" onClick = {()=>{this.openPhoto(4)}}>
                             <div className = "certi-site">
                                 Coursera
                             </div>
@@ -68,10 +68,10 @@ export default class CertificatesComponent extends Component{
                                 Bootstrap 4
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(4)}}></div>
+                                <div className = "goto-button-image" ></div>
                             </div>
                         </div>
-                        <div className = "each-certi">
+                        <div className = "each-certi" onClick = {()=>{this.openPhoto(5)}}>
                             <div className = "certi-site">
                                 Coursera
                             </div>
@@ -79,10 +79,10 @@ export default class CertificatesComponent extends Component{
                                 ReactJS
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(5)}}></div>
+                                <div className = "goto-button-image" ></div>
                             </div>
                         </div>
-                        <div className = "each-certi1">
+                        <div className = "each-certi1"  onClick = {()=>{this.openPhoto(6)}}>
                             <div className = "certi-site">
                                 Coursera
                             </div>
@@ -90,10 +90,10 @@ export default class CertificatesComponent extends Component{
                                 MongoDB, Express, NodeJS
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(6)}}></div>
+                                <div className = "goto-button-image"></div>
                             </div>
                         </div>
-                        <div className = "each-certi">
+                        <div className = "each-certi" onClick = {()=>{this.openPhoto(7)}}>
                             <div className = "certi-site">
                                 Coursera
                             </div>
@@ -101,10 +101,10 @@ export default class CertificatesComponent extends Component{
                                 MATLAB
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(7)}}></div>
+                                <div className = "goto-button-image" ></div>
                             </div>
                         </div>
-                        <div className = "each-certi1">
+                        <div className = "each-certi1"  onClick = {()=>{this.openPhoto(8)}}>
                             <div className = "certi-site">
                                 Coursera
                             </div>
@@ -112,7 +112,7 @@ export default class CertificatesComponent extends Component{
                                 Algorithmic Toolbox
                             </div>
                             <div className = "certi-view">
-                                <div className = "goto-button-image" onClick = {()=>{this.openPhoto(8)}}></div>
+                                <div className = "goto-button-image"></div>
                             </div>
                         </div>
                     </div>

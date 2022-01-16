@@ -63,7 +63,7 @@ export default class SkillComponent extends Component{
                     <div className = "card">
                         <div className = "card-image imgurl10"/>
                         <div className = "card-name">
-                            Express
+                            NodeJS
                         </div>
                     </div>
                     
