@@ -4,22 +4,29 @@ export default class CertificatesComponent extends Component{
     constructor(props){
         super(props);
         this.state={
-
+            isModalOpen : {},
+            imgString : {}
         }
     }
     openPhoto(id){
-        console.log(id);
+        let imgSS = require("../images/"+id+".png");
+        this.setState({
+            ...this.state,isModalOpen : {display : "block"},imgString : imgSS
+        })
+    }
+    closeModal(){
+        this.setState({
+            ...this.state,isModalOpen : {}
+        })
     }
     render(){
         return(
-            <div>
-                <br></br><br></br><br></br>
-                <div className = "main-heading-container">
+            <div>                
+                <div className = "main-heading-container forbr">
                     <div className = "heading-text">
                         Certificates
                     </div>
-                    <br></br><br></br><br></br>
-                    <div className = "certi-container">
+                    <div className = "certi-container forbr">
                         <div className = "each-certi">
                             <div className = "certi-site">
                                 HackerRank
@@ -110,7 +117,14 @@ export default class CertificatesComponent extends Component{
                         </div>
                     </div>
                 </div>
-                {/* <div id = "updateModal" className = "modal" style = {this.state.updateModal}></div> */}
+                <div id = "updateModal" className = "modal" style = {this.state.isModalOpen}>
+                    <div className="modal-content">
+                        <div className="modal-header-success">
+                            <span className="close" onClick = {()=>this.closeModal()}>&times;</span>
+                            <img src = {this.state.imgString} className = "img-tag"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

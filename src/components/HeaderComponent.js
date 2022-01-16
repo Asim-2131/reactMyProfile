@@ -17,6 +17,7 @@ export default class HeaderComponent extends Component{
                         <li className = "nav-items">
                             Home
                         </li>
+                        
                         <li className = "nav-items">
                             About
                         </li>

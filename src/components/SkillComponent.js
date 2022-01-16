@@ -11,8 +11,7 @@ export default class SkillComponent extends Component{
                 <div className = "heading-text">
                     Skills
                 </div>
-                <br></br><br></br><br></br>
-                <div className = "cardContainer flexContainer">
+                <div className = "cardContainer flexContainer forbr">
                     <div className = "card">
                         <div className = "card-image imgurl1"/>
                         <div className = "card-name">
