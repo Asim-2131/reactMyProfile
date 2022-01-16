@@ -428,6 +428,17 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
+.visit-source-code{
+    float : right;
+    margin-right : 3rem;
+    background-image : url('./images/icons8-external-link-60.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height : 3.5rem;
+    width : 3.5rem;
+    
+}
 .close:hover,
 .close:focus {
     color: rgb(172, 120, 120);
